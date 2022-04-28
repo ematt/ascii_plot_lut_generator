@@ -148,8 +148,8 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <p>Created by <a href="#">Vlad Tuhut</a> //
-                                            Fork me on <a href="#"><i class="bi bi-github"></i></a></p>
+                                        <p>Created by <a href="https://github.com/ematt"  target="_blank">Vlad Tuhut</a> //
+                                            Fork me on <a href="https://github.com/ematt/ascii_plot_lut_generator"  target="_blank"><i class="bi bi-github"></i></a></p>
                                         <p>
                                         <h6 class="text-muted">Thanks to:</h6>
                                         <ul class="list-group list-group-flush">
@@ -249,7 +249,9 @@
         function generate(data, config) {
             const dataLen = config.dataLen ?? 100;
 
-            var asciichartConfig = {};
+            var asciichartConfig = {
+                symbols: [ '+', '|', '*', '*', '*', '*', '*', '*', '*', '*' ],
+            };
             if (_.has(config, 'plotHeight') && _.get(config, 'plotHeight') > 0) {
                 asciichartConfig['height'] = _.get(config, 'plotHeight');
             }
