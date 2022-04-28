@@ -1,7 +1,8 @@
-# Foobar
+# ASCII plot lut generator
 
 This is a look up table generator with plot in unicode for C.
 
+Sample output:
 ![sample output](img/sample_output.PNG)
 
 ## Installation
